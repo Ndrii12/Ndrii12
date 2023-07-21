@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serba 10K</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+    hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}
+      * {
+        box-sizing: border-box;
+      }
+      body, html {
+          width: 100%;
+          overflow-x: hidden;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color:#F6F6F6;
+        font-family: "Poppins", sans-serif;
+      }
+      #flam-pop-background {
+          background: url("https://blogger.googleusercontent.com/img/a/AVvXsEhFA4K-szMM7TFQU8DEPYw-XZQn8zmyhCRAsV2gJAMHuumOWyeJ_iMSsqJvmSQPzy9FvD0eVlIAFnyx-_2-vpJ4vojTrXwyNajmexTe8aLrWXglh186RK1CcuQhh_bHo3Klk8RBY9gHd1XkAeUFDgcHQO-Sqj7CRiZ3pNOCx7HHv5LRbMlfDD5PwUXbQg=s500");
+          background-size: 100% 100%;
+      }
+      .container__blue__color {
+        background-color: #177F7E;
+        padding: 10px 20px 0;
+        height: 82px;
+      }
+
+
+      .wrap__menu {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: -10px;
+        border-radius: 4px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        
+      }
+
+
+      .namanya {
+               position: relative;
+               top:-11px;
+               font-size:17px;
+               color: white;
+      }
+ 
+      .main__menu {
+        padding: 2px 20px 30px;
+        background-color: #fff;
+        border-radius: 4px;
+      }
+
+
+      .list__menu {
+        list-style: none;
+        margin: 0;
+        padding:0;
+        display: grid;
+        border: right;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        position: relative;
+        top:15px;
+        
+      }
+
+
+      .link__list__menu {
+        color: #177F7E;
+        text-decoration: none;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 4px;
+        transition: opacity 150ms ease-in-out;
+        font-weight: 500;
+        
+      }
+
+
+      .link__list__menu:hover {
+        opacity: 0.85;
+      }
+
+
+      
+
+
+      .text__submenu__list {
+        margin: 0;
+        font-size: 12px;
+      }
+
+
+      .wrap__banner {
+        margin: -25px 20px 0;
+        position: relative;
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        padding: 15px 20px 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        gap: 25px;
+      }
+
+
+      .sub__banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        text-decoration: none;
+      }
+
+
+      .image__banner {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+
+      .text__banner {
+        margin: 0;
+        color: #242424;
+        font-size: 12px;
+      }
+
+
+       .icons_top {
+        width: 30px;
+        height: 30px;
+      }
+      .flam-icons {
+          position: relative;
+          top: 6px;
+      }
+      #flam-text {
+        position: relative;
+        left: 3%;
+        bottom: -6px;
+        }
+        #flam-pusat {
+                                        background-color: white;
+                                        border-radius: 8px;
+                                        box-shadow: 0 1px 2px 2px rgba(0,0,0,0.1);
+                                        padding: 2%;
+                                        position: relative;
+                                        bottom: 4px;
+        }
+        #flam-padd {
+                                        padding: 6%;
+                                        position: relative;
+        }
+        #float ul {
+        display: inline-block;
+                                        padding: 0;
+                                        list-style-type: none;
+                                        margin: 0;
+        }
+        #flam-float il {
+                                        padding: 2%;
+                                        
+        }
+        #tooltip2 {
+  position: relative;
+  display: inline-block;
+  border-radius: 0px;
+  top: 6px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 32%;
+  right: 0.8%;
+  color: grey;
+  font-size: 12.8px;
+  margin-bottom: 15px;
+}
+
+
+#tooltip2 a {
+  cursor: none;
+}
+
+
+#tooltip2 #tooltiptext2 {
+  visibility: hidden;
+  width: 400%;
+  background-color: transparent;
+  color: grey;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0%;
+  margin-left: 0px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+
+.imgs11 {
+  padding: 14%;
+  margin-top: 0px;
+  border-radius: 4px;
+  margin-bottom: 0px;
+  text-align: center;
+  width: 70.2%;
+  transition: 0.3s;
+}
+.flam-table {
+width: 100%;
+}
+#flam-info {
+padding-top: 2%;
+}
+.flam-color-white {
+color: white;
+}
+.imgs111 {
+  padding: 0px;
+  margin-top: 0px;
+  border-radius: 0px;
+  margin-bottom: 5px;
+  width:50%;
+  transition: 0.3s;
+}
+.imgs111:hover {
+  background-color: #32CD32;
+  border-radius: 100px;
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+#flam-pop {
+                                width: 0%;
+                                overflow: hidden;
+                                background: rgba(0,0,0,0.4);
+                                position: fixed;
+                                top: 0;
+                                z-index: 1;
+                                left: 0;
+
+
+                                transition: 0.2s;
+                                height: auto;
+}
+#flam-up {
+                                width: 0%;
+                                transition: 1s;
+                                height: auto;
+                        
+                                background: white;
+}
+#flam-popupinfo {
+    overflow: scroll;
+    height: 470px;
+}
+.flamPadd20 {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+}
+.flamPadd20 img {
+    width: 100%;
+    border-radius: 4px;
+    height: 120px;
+}
+.flamPersegi {
+    border-radius: 4px;
+    width: 100%;
+    background: white;
+    text-align: center;    
+    padding: 4%;
+    box-shadow: -1px -1px 0.8px 0 rgba(0, 0, 0, 0.1);
+}
+.flamPadd22 {
+    padding: 2%;
+}
+hr {
+    margin: 0;
+    padding: 0;
+}
+        #tooltip4 {
+  position: relative;
+  display: inline-block;
+  border-radius: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  color: grey;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 24%;
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+
+
+#tooltip4 a {
+  cursor: none;
+}
+
+
+#tooltip4 #tooltiptext4 {
+  visibility: hidden;
+  width: 400%;
+  background-color: transparent;
+  color: grey;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0%;
+  margin-left: 0px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+
+
+
+#tooltip2:hover #tooltiptext2 {
+
+
+  visibility: visible;
+  opacity: 1;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+#column5 {
+  float: left;
+  margin-bottom: 16px;
+  padding: 0 18px;
+}
+
+
+#column5 a {
+  cursor: none;
+}
+#card5 {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  cursor: none;
+  user-select: none;
+}
+
+
+#container5 {
+  padding: 0 0px;
+  
+}
+
+
+#row5 {
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+
+#container5::after, #row5::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+#title5 {
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+
+
+
+
+#ppob {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  float: left;
+  width: 100%;
+}
+
+
+.imgs114 {
+  padding: 0px;
+  margin-top: 0px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  width:44%;
+  transition: 0.3s;
+}
+.flamNone {
+    display: none;
+}
+ #FLAMid-pusat {
+                        background-color: white;
+                        border-radius: 6px;
+                        padding: 2%;
+                        height: 60px;
+                        box-shadow: -1px -1.8 0.8px 0 rgba(0, 0, 0, 0.1);
+                        overflow: hidden;
+        }
+        .FLAMid-font-adlinaka {
+                        font-family: 'Adlinnaka', monospace;
+                        padding: 0;
+                        margin: 0;
+        }
+        .FLAMid-button-animate {
+            animation: flambutton 2s;border: 2px solid #2a98ff;background: linear-gradient(74deg, rgb(6, 197, 255), white, white, white);
+        }
+        .FLAMid-button2 {
+            border: 1px solid #2a98ff;
+        }
+        .FLAMid-right {
+                        float: right;
+        }
+        @keyframes flam {
+        0% {position: relative;bottom: -8px;}
+            5% {position: relative;bottom: -8px;}
+                        10% {position: relative;bottom: 54px;}
+                        15% {position: relative;bottom: 54px;}
+                        20% {position: relative;bottom: 122px;}
+                        25% {position: relative;bottom: 122px;}
+                        30% {position: relative;bottom: 188px;}
+                        35% {position: relative;bottom: 188px;}
+                        40% {position: relative;bottom: 260px;}
+                        45% {position: relative;bottom: 260px;}
+                        50% {position: relative;bottom: 328px;}
+                        55% {position: relative;bottom: 328px;}
+                        60% {position: relative;bottom: 400px;}
+                        65% {position: relative;bottom: 400px;}
+                        70% {position: relative;bottom: 460px;}
+                        75% {position: relative;bottom: 460px;}
+                        80% {position: relative;bottom: 528px;}
+                        85% {position: relative;bottom: 528px;}
+                        90% {position: relative;bottom: 590px;}
+                        95% {position: relative;bottom: 590px;}
+            100% {position: relative;bottom: FLAMid;}                    
+        }
+  .FLAMid-animate {
+            animation: flam 18.8s infinite;
+            position: relative;
+  }
+        
+        .FLAMid-btn {
+                        position: relative;
+                        bottom: 4px;
+                        background-color: white;
+                        color: #2a98ff;
+        }
+        .FLAMid-btn:hover {
+                        position: relative;
+                        bottom: 4px;
+                        background-color: #2a98ff;
+                        color: white;
+        }
+        .FLAMid-slid {
+                        width: 100%;
+                        border: 1px solid transparent;
+                        height: 68px;
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 4px;
+        }
+        .FLAMid-over {
+                        width: 100%;                                
+        }
+        .flamFloatRight {
+            float: right;
+        }
+        #flamPop {
+            position: fixed;
+            z-index: 1;
+            background: white;
+            left: 0;
+            bottom: -102%;
+            border-radius: 20px 20px 0 0;
+            width: 100%;
+            transition: 0.4s;
+        }
+        #flamPop img {
+            height: 40px;
+            width: 40px;
+        }
+        #flamBShadow {
+        position: fixed;
+            background: rgba(0, 0, 0, 0.4);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+        }
+        .flam-setting-2 {
+            position: relative;
+            top: 6px;
+        }
+        .flam-img-s {border-radius: 10px;}
+    </style>
+  </head>
+  <body>
+    
+    <section class="container__blue__color">
+                                    <h3 class="namanya"><span class="material-icons flam-icons" onclick="FlamGo()">menu</span> <span style="position: relative;left: 4.8%;">FLAMid</span></h3>
+      <div class="wrap__menu">
+        <div class="main__menu">
+          <ul class="list__menu">
+            <li>
+              <a href="https://flamgo.bukaolshop.site/akun/?page=topup" class="link__list__menu" id="qris__icon">
+                <div class="submenu__list">
+                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidfojsyArt9u-h5JQ5uJuvi2g4mf-8EVmvmXjG7Z1ZJR_DHWVvXhGhSvPZYUpNtQ8zA7bQRu8Rn05lVxiioE0hG76lBMLXs8AJW58tuXK8Ea-LwXVAIWkOiap3Iw9yve9HNQpECiGiyTE1IlEdj8eL7dpSkHxctqQs2eo_YpG1nmhN5qTB3svA4exhQg/s512/wallet.png" alt="" class="icons_top">
+                </div>
+                <p class="text__submenu__list" id="flam-saldo-user">{{saldo_user}}</p>
+              </a>
+            </li>
+           
+            <li>
+              <a href="https://flamgo.bukaolshop.site/akun/?page=saldo_history" class="link__list__menu">
+                <div class="submenu__list">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQMp9Jjh3TewftGM4Ueg_vAVRe7qyrYhKSWD20eU3anJIS7EIyfD-peVJCNK5tHzsf7vyJYtvqUBwQ_a1ihDtr56ubJw2VtlRZHa_Y7FfqYRSbP6Nlk738NctRedqowwDPZZlteQ1PGCo_DkiKd0N3WEHM_5v99sPCX1Qls1kQq07MV0zQVcDQtHrVjg/s512/refund.png" alt="" class="icons_top">
+                </div>
+                <p class="text__submenu__list">Deposit</p>
+              </a>
+            </li>
+           
+            <li>
+              <a href="https://flamgo.bukaolshop.site/akun/?page=withdraw" class="link__list__menu">
+                <div class="submenu__list">
+                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisQ_sVVsxJnCGAyEIUGZIfx967ZwMqyw_dBFpqNDj1oVybv4QuXJmH76XgdjJA0KnhCAT79vOcnfnij4rxYfjXMEAxCfZf9CDFpDHQ3fj58dCh0RkcHBIRKM3Q3ZvZ7qX0VKWL4dCX1rpNSxiOgYexg3oXzb-1NBKRNSa65yeum7XDrmE7vASItGxG5A/s512/premium.png" alt="" class="icons_top">
+                </div>
+                <p class="text__submenu__list">withdraw</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+     <!-- Luar || FLAMid Comment -->
+     
+        <div id="flam-pop">
+                                        <div id="flam-up">
+                                                                        <div id="flam-pop-background">
+                                                                                                        <a href="javascript:void(0)" onclick="FlamClose()"><small><span class="glyphicon glyphicon-remove-sign fa-2x" style="color: white;border: 1px solid white;border-radius: 50%;background: red;position: relative;left: 94%;top: 4px;font-size: 24px;"></span></small></a>
+                                                                                                        <center>
+                                                                                                        <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyYOcwONuxBo1vsCWVPe1l59uyn6Yyn8RT-BuAdiRmdRC5-YM3H9Kp3Kk9erBoCeB_wWvYQuIlpNbo5wCpBybXBeAdFm9rkOpKqz7ELsL30A7VLVKl09s_EYE6WuVw58H14UMrY0tCSpypCuajhVNiyr_c1Nag1J7H0z0Yl4nBHj0FAUSKilTEPg1o0Q/s1280/1653195285031.jpg" alt="@FLAMid" style="width: 28%;border-radius: 50%;border: 1px solid white;position: relative;bottom: 14px;"></a>
+                                                                                                        <div style="color: white;position: relative;bottom: 12px;">
+                                                                                                        <h5><b>ＦＬＡＭＩＤ . ＧＲＯＵＰ</b></h5><br/>
+                                                                                                        <small style="position: relative;bottom: 14px;">ᴊʟ. ʙʀɪɢᴊᴇɴᴅ ᴋᴀᴛᴀᴍꜱᴏ, ᴅꜱɴ.ᴄᴜʀᴀʜᴘᴀᴄᴜʟ, ᴛᴀᴍʙᴀᴋʀᴇᴊᴏ, ᴍᴜɴᴄᴀʀ, ᴋᴀʙᴜᴘᴀᴛᴇɴ ʙᴀɴʏᴜᴡᴀɴɢɪ, ᴊᴀᴡᴀ ᴛɪᴍᴜʀ.</small>
+                                                                                                        </div>
+                                                                                                        </center>
+                                                                        </div>
+                                                                        <div class="container" id="flam-popupinfo"><br/>
+                                                                        <a href="https://agenoacindonesia.tokowebku.com/akun/?page=profil&status=sukses" style="text-decoration: none;color: #2c2c30;">        
+                                                                        <table>
+                                                                                                        <tr>
+                                                                                                                                        <td style="width: 14.8%;">
+                                                                                                                                                                        <img src="https://ownerandracellbusiness.files.wordpress.com/2021/12/20211201_164848_0000.png" alt="" style="width: 80%;border-radius: 6px;border: 1px solid white;position: relative;bottom: 14px;">
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                                                        <small style="position: relative;bottom: 12.8px;"> Profil</small>
+                                                                                                                                        </td>
+                                                                                                        </tr>
+                                                                        </table></a><br/>
+                                                                        <a href="https://agenoacindonesia.tokowebku.com/akun/?page=transaksi" style="text-decoration: none;color: #2c2c30;">        
+                                                                        <table>
+                                                                                                        <tr>
+                                                                                                                                        <td style="width: 14.8%;">
+                                                                                                                                                                        <img src="https://ownerandracellbusiness.files.wordpress.com/2021/12/20211201_165418_0000.png" alt="" style="width: 80%;border-radius: 6px;border: 1px solid white;position: relative;bottom: 14px;">
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                                                        <small style="position: relative;bottom: 12.8px;"> Riwayat Transaksi</small>
+                                                                                                                                        </td>
+                                                                                                        </tr>
+                                                                        </table></a><br/>
+                                                                        <a href="https://agenoacindonesia.tokowebku.com/akun/?page=withdraw" style="text-decoration: none;color: #2c2c30;">        
+                                                                        <table>
+                                                                                                        <tr>
+                                                                                                                                        <td style="width: 14.8%;">
+                                                                                                                                                                        <img src="https://ownerandracellbusiness.files.wordpress.com/2021/11/20211129_113122_0000.png" alt="" style="width: 80%;border-radius: 6px;border: 1px solid white;position: relative;bottom: 14px;">
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                                                        <small style="position: relative;bottom: 12.8px;"> Top Up & Tarik Saldo</small>
+                                                                                                                                        </td>
+                                                                                                        </tr>
+                                                                        </table></a><br/>
+                                                                        <a href="#" style="text-decoration: none;color: #2c2c30;">        
+                                                                        <table>
+                                                                                                        <tr>
+                                                                                                                                        <td style="width: 14.8%;">
+                                                                                                                                                                        <img src="https://ownerandracellbusiness.files.wordpress.com/2021/12/20211201_164904_0000.png" alt="" style="width: 80%;border-radius: 6px;border: 1px solid white;position: relative;bottom: 14px;">
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                                                        <small style="position: relative;bottom: 12.8px;"> Transfer Saldo</small>
+                                                                                                                                        </td>
+                                                                                                        </tr>
+                                                                        </table></a><br/>
+                                                                        <a href="https://agenoacindonesia.tokowebku.com/digital/79254" style="text-decoration: none;color: #2c2c30;">        
+                                                                        <table>
+                                                                                                        <tr>
+                                                                                                                                        <td style="width: 14.8%;">
+                                                                                                                                                                        <img src="https://ownerandracellbusiness.files.wordpress.com/2021/12/20211201_164920_0000.png" alt="" style="width: 80%;border-radius: 6px;border: 1px solid white;position: relative;bottom: 14px;">
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                                                        <small style="position: relative;bottom: 12.8px;"> Program Referal</small>
+                                                                                                                                        </td>
+                                                                                                        </tr>
+                                                                        </table></a><br/>
+                                                                        <a href="" style="text-decoration: none;color: #2c2c30;">        
+                                                                        <table>
+                                                                                                        <tr>
+                                                                                                                                        <td style="width: 14.8%;">
+                                                                                                                                                                        <img src="https://ownerandracellbusiness.files.wordpress.com/2021/10/screenshot_20211021-125305.png" alt="" style="width: 80%;border-radius: 6px;border: 1px solid white;position: relative;bottom: 14px;">
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                                                        <small style="position: relative;bottom: 12.8px;"> Struk Digital</small>
+                                                                                                                                        </td>
+                                                                                                        </tr>
+                                                                        </table></a><br/>
+                                                                        <a href="https://agenoacindonesia.tokowebku.com/" style="text-decoration: none;color: #2c2c30;">        
+                                                                        <table>
+                                                                                                        <tr>
+                                                                                                                                        <td style="width: 14.8%;">
+                                                                                                                                                                        <img src="https://ownerandracellbusiness.files.wordpress.com/2021/12/20211201_165312_0000.png" alt="" style="width: 80%;border-radius: 6px;border: 1px solid white;position: relative;bottom: 14px;">
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                                                        <small style="position: relative;bottom: 12.8px;"> Web Report</small>
+                                                                                                                                        </td>
+                                                                                                        </tr>
+                                                                        </table></a><br/>
+                                                                        <a href="#" style="text-decoration: none;color: #2c2c30;">        
+                                                                        <table>
+                                                                                                        <tr>
+                                                                                                                                        <td style="width: 14.8%;">
+                                                                                                                                                                        <img src="https://ownerandracellbusiness.files.wordpress.com/2021/12/20211201_164936_0000.png" alt="" style="width: 80%;border-radius: 6px;border: 1px solid white;position: relative;bottom: 14px;">
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                                                        <small style="position: relative;bottom: 12.8px;"> 
+                                                                                                                                                                                                        
+                                                                                                                                                                                               Hubungi Kami
+                                                                                                                                                                        </small>
+                                                                                                                                        </td>
+                                                                                                        </tr>
+                                                                        </table></a><br/>
+                                                        <div style="background: #f1f1f1;height: 1px;position: relative;bottom: 10px;"></div>
+                                                        <div>
+                                                                                        <small style="color: #a4a4a4;"><b>Lain - lain</b></small><br/><br/>
+                                                                                        <a href="#" style="text-decoration: none;color: #2c2c30;">        
+                                                                        <table>
+                                                                                                        <tr>
+                                                                                                                                        <td style="width: 14.8%;">
+                                                                                                                                                                        <img src="https://ownerandracellbusiness.files.wordpress.com/2021/12/20211201_162229_0000.png" alt="" style="width: 80%;border-radius: 6px;border: 1px solid white;position: relative;bottom: 14px;">
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                                                        <small style="position: relative;bottom: 12.8px;"> Akademi Digital</small>
+                                                                                                                                        </td>
+                                                                                                        </tr>
+                                                                        </table></a><br/>
+                                                                        <a href="#" style="text-decoration: none;color: #2c2c30;">        
+                                                                        <table>
+                                                                                                        <tr>
+                                                                                                                                        <td style="width: 14.8%;">
+                                                                                                                                                                        <img src="https://ownerandracellbusiness.files.wordpress.com/2021/12/20211201_162144_0000.png" alt="" style="width: 80%;border-radius: 6px;border: 1px solid white;position: relative;bottom: 14px;">
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                                                        <small style="position: relative;bottom: 12.8px;"> Blog</small>
+                                                                                                                                        </td>
+                                                                                                        </tr>
+                                                                        </table></a><br/>
+                                                                        <a href="https://agenoacindonesia.tokowebku.com/pages?informasi" style="text-decoration: none;color: #2c2c30;">        
+                                                                        <table>
+                                                                                                        <tr>
+                                                                                                                                        <td style="width: 14.8%;">
+                                                                                                                                                                        <img src="https://ownerandracellbusiness.files.wordpress.com/2021/12/20211201_162304_0000.png" alt="" style="width: 80%;border-radius: 6px;border: 1px solid white;position: relative;bottom: 14px;">
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                                                        <small style="position: relative;bottom: 12.8px;"> FAQ</small>
+                                                                                                                                        </td>
+                                                                                                        </tr>
+                                                                        </table></a><br/>
+                                                                        <a href="https://agenoacindonesia.tokowebku.com/pages?informasi" style="text-decoration: none;color: #2c2c30;">        
+                                                                        <table>
+                                                                                                        <tr>
+                                                                                                                                        <td style="width: 14.8%;">
+                                                                                                                                                                        <img src="https://ownerandracellbusiness.files.wordpress.com/2021/12/20211201_162247_0000.png" alt="" style="width: 80%;border-radius: 6px;border: 1px solid white;position: relative;bottom: 14px;">
+                                                                                                                                        </td>
+                                                                                                                                        <td>
+                                                                                                                                                                        <small style="position: relative;bottom: 12.8px;"> Syarat dan Ketentuan</small>
+                                                                                                                                        </td>
+                                                                                                        </tr>
+                                                                        </table></a>
+                                                                        
+                                                                        
+                                                                        <br/></div>
+                                        </div>
+        </div></div></div>
+</div><br/><br/><br/>
+<script src="https://rawcdn.githack.com/modernplay/hostfile/f1a50044e552a32247eb808f8876abbb6bc12554/jssor.slider-kat.min.js" type="text/javascript"></script>                                
+<script type="text/javascript">
+    window.jssor_1_slider_init = function(){
+    var jssor_1_options = {
+    $AutoPlay: 1,
+    $SlideWidth: 806,
+    $SlideHeight: 280,
+    $SlideSpacing: 48,
+};
+
+
+    var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+    var MAX_WIDTH = 100000;
+    function ScaleSlider() {
+    var containerElement = jssor_1_slider.$Elmt.parentNode;
+    var containerWidth = containerElement.clientWidth;
+    if (containerWidth) {
+    var expectedWidth = Math.min(MAX_WIDTH || containerWidth,       containerWidth);jssor_1_slider.$ScaleWidth(expectedWidth);}
+    else {
+    window.setTimeout(ScaleSlider, 30);}
+}
+    ScaleSlider();
+      $Jssor$.$AddEvent(window, "load", ScaleSlider);
+      $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+      $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+        };
+</script>
+<div id="jssor_1" style="position:relative;margin:0 auto;margin-top:0px;left:0px;width:900px;visibility:hidden;">
+                                                                                                <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+<img id="flam-setting-img20" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSUGDE6CJ_6bWF4zX1BUXvUfBbJAaiiKCokBgVHkPSRX6oXj6iD3Me6lfrG_K_RFdDKr85sZxnMebIuZU9tlAu_75yPvxFBibCP1iVohTNw4a4ILSm35hGBZCEw6EUqT8Yjol-HXoZEguB37GHeza-XtC7ez9bH9UmnFIaZrzocL90p94nkoexoGfvQ/s675/images%20%2817%29.jpeg"/>
+</div>
+<div data-u="slides" style="cursor:default;position:relative;left:0px;width:900px;height:306px;overflow:hidden;bottom: 4px;">
+<script src="https://flamgo.000webhostapp.com/js/flam_generate.js"></script>
+
+
+<div>
+  <a href=""><img class="flam-img-s" data-u="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrnAHTw3vHPRSUYBUPZ88GyOwEdP9RtM7exRqgyagpRHPlOFRFfkANKlj9nXKAzNfNAAC0Wpa2f8d0n8-oVIZCOI4HkeDmBQiPRPI3xwrX6BaFLgMImtHml7dT5jajf3OYfjWZEHKFt-2ePCiVQystydtmbECKQgpeNKrU3omRIwZGSaFwEcH7T91I5A/s551/cara-isi-voucher-axis-lewat-sms.png" /></a></div>                                                                                                
+  <div>
+  <a href=""><img class="flam-img-s" data-u="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeLA42iBOn5O5nnJ_z7I_B2gxKU3m0PHiXI3wht3Lh-v14-4hdZ6dGIsneQDwCi_jZHNyOp7eGsph87teASoTErhU-9xAXtVKjM1hNl5UiMrNGEdxJ3JgK-C1keqKppI4EuIHsHpOh0NOupYFHJ0FFBkX4oqayAAoW0ec6kEqI2TrCANysqr-lBIndzQ/s1024/Poster-telkomsel.jpg" /></a></div>
+
+
+<div>
+  <a href=""><img class="flam-img-s" data-u="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfmPYLKnYoiGp--0Kf4Ux53oZuGUGBCZCjrWNmUtoAi7DvvIYsg0CVi2t5vdd1owZ_UgGklgs46qUeHu5y3EhKwLeSlNvvl__OiTO9N2z7I19HO0rRklgobM19YpG4WqU4JikNA9T_WavEu1syXx6pFCQwmbgTW-PuD0b2cn4eg-ZWOBJNp3hajv952A/s4001/TSEL-LED_1920x1080px_Horz_210617-01.jpg" /></a></div>
+  
+<div>
+  <img class="flam-img-s" data-u="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivLYcE0SxwwZ28I4BxDXFSRbqJVROt7pQ46RbGnxzc1-oVi-lVKfh-deXWefOHUqx7F0JoD7-e3J4adZcw1ZeAtquVuoh6wGl_GTUbxKvPT9wPYzkcFEFqmxozeiEA-iCSjGhZ8H6UY7njOWCgw2wO6L4gj_xPcJHgDxLUro_oqDp1NpVYIpU2SNNXCA/s1600/20211229WEBBANNERPAGE1600x900px2BAHASA.jpg" /></a></div>
+ 
+</div>
+
+
+<script type="text/javascript">jssor_1_slider_init();
+</script></div><div class="flamPadd20">
+<div style="padding-right: 7%;">
+<div class="flamPersegi">
+    <small id="flamTxt"></small>
+</div></div>
+</div><div class="flamPadd22"></div>
+<div style="background: white;">
+    <div style="padding: 4%;padding-top: 0.6%;padding-bottom: 0.6%;"><h5><b>Kategori</b></h5></div>
+    <hr /><br/>
+    
+    
+    <a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6N8cu4blIEp4lKgsmreJni3IS4EAwq8Uq-DugPO9GO2qc9n0Lf-8arJ9vjeQplvSA8mrTHqxJrNxoJQVfuQpEKHknOVpV8OeLEv_dfh22C4_beaPPyf3Jl2j9T87MQn58BXIAv6tGzV_ioBldZUvxD4QNhguW5ddJYkd9_QrCuaTOgEXpdlG8jmErkA/s512/handphone.png" alt="FLAMid"><br/>Pulsa</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuVCQgnjhGXhK0937PpM5tBzRUwQNEA8kf-VQbeYUoZyMyOnCjZ1-rikOo1kRua8oQwgHz50ZIo4EZOWHds8Ve2Ls0o0DugDXfxvYTjS5FssHGliy6qKuUIFQApsd2lqBWcfEXsBpdejFfCuE75wOaBQEyt2wlN0rOdFW5218ai_BHBBK6hTLRxZAGUw/s512/location.png" alt="FLAMid"><br/>Paket Data</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKUs5eaFkyXsgU7ltLXQNmEbbT7640OVfB4FKhtwkxCGY3BtQV74VQm0F5usyncuLxyJcewNtyucdiPPaRJUjacbtGfonUmIJyeOgDPhdacPvyDFmj1cFmFZtgEu-fZJZ9t9w_vMCTChKL1IA35zsyU0KAMT5a-NNXkf87QPPQ-fwvKy-J5L3-i0anEQ/s512/gamepad.png" alt="FLAMid"><br/>Games</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_RYLTZiJ4CH0MVAjfQevuwhwHxRNR4Y-Aavj6FzuhYFzFtNiK_28CPZk8ILdvzMFBplwWi5CW4rrWjO4q_SUl8iydhapnZHaVDwwOBiOp9fAOYISzG7MQ0dbrKYYCm97H7xK4-c2P0AO-ILBR8hVW5kh3924FUuovVW4aNDz1E4CSy9XynOHLYRtvBw/s512/contact.png" alt="FLAMid"><br/>Telepon</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjusx6_tt5SUFbE-17vg6vT4TmwgnGYtZTsjbl4KRSNdk6ZoS2KZSeslM9z5IWBCrLcLQZvC1kZ7I4sPDgqXhAUXqyuL8UR2amH5MozA3udAregeV6DWMbA1SAyT1Zc3Z9SLN1VRLbwN6tlSSPoukz07Iug8MLBdZxMt8hVxlEWpFt-FvruFnAQsWPFJg/s512/battery.png" alt="FLAMid"><br/>Token Listrik</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-j8SOmqjtgs_51nyIFEHs2UgLgrnQFra1Hf18LYXurbe4p4s3ibwwPOWyYsPWxxFDpx7HJTpsKuoQuAkxncvw8ptFPoxG8vqnj0XORcDTopUNyXjBbKZgL7UcDamDd83H2h36ocjfRHWI8YBpFnjbXLBJALgfnJ-DndXsfJy7GgYwqfIk8hxf2o_OgA/s512/email.png" alt="FLAMid"><br/>Kontak Kami</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPoz-znpfk_h0BoQMA-3FQ4DJr3X-r397rJOBqvIemKyKnMAfCKdmF4q2NddRFRpfA8nsMmA1us6BJ8b8YGCGOa5GwUM7TaeV11W0j97YNrBEHwpdgtLZzNbBMjH1bJ3CPNmJ53ujghSeMIlo451RCzEPWy933h9UyJWWyqSjAQxxpqX_ywxbJZ1l8MA/s512/bookmark.png" alt="FLAMid"><br/>Promo</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho__h86T3bzOM9UhQTVRsXcQPUfKz2_mXBMdCDhswl3d161dw9HbMYxLipuBkQOv4GdEQiFs7VOEaNorhjqyVwY2IUy_k8e66zdszGhQsZ9t-CSZ0WICSGXgBdM2kI0MnCa82WLg6X-dhLQKzL6oCVPtYc2n4D5AlU3cebf2R6rRy-UogdwfUEyx5aQA/s512/trophy.png" alt="FLAMid"><br/>Uppgrade</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Favorit</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilrIEy8cHE-N1FD94gUBhtvi6AGPhSI8Go8wX0yQZy0-cRrhUyIzGLVtI9EManaX5-YNflaCKp1OfaK8JD4X56ayqsUHCk_NLH_n0Q4pfj8KFsSvOZDxfqJ5jMx4r8TTllj7wTMYTeMQx_JlCjfC5MviAXkHxQXj2acEkisMkhIw6SPJ6RMCAtVrLP_A/s512/date.png" alt="FLAMid"><br/>Voucher</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2VTevrgnQL5D8KKI-QXOxTrOXS6TN2GkO3mWRylcxVSIIYLrJIDFAZ7RnnbAz0dxW90inNOxjymLVvrHD_b3RFV1ESBlT6htToMilOZRyDYk9gI62mKK82FwR0hQ1nH7c34XwD2TLxeF9x5h6nYntey_7bvH4gZ4nF8le61QVB9pg6d3354M9X1DHQQ/s512/notification.png" alt="FLAMid"><br/>Notifikasi</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a onclick="flamOpenDua()"><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5jT7pHYzfjmMV92z1dL4itkgzv0AKZ0FEdBjOuNUY3ldKnE1-tQ5TZFoDqRoyiYaIAY6Uk32YTNZ01PzxJ9PpfPMKaciZrAHXA-6PzdVfcI4qdHb4JSFSLB_LIc0JobJCNph2FvZosDk7zIdZdNeDSfqiKCElpejNbFj7sFf6naD9DX_pTT1MwzOdtA/s512/push-pin.png" alt="FLAMid"><br/>Lainnya</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+
+
+    <br/></div>
+</div><div class="flamPadd22"></div>
+<div style="background: white;">
+    <div style="padding: 4%;padding-top: 0.6%;padding-bottom: 0.6%;"><h5><b>Kategori</b></h5></div>
+    <hr /><br/>
+    
+    
+    <a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6N8cu4blIEp4lKgsmreJni3IS4EAwq8Uq-DugPO9GO2qc9n0Lf-8arJ9vjeQplvSA8mrTHqxJrNxoJQVfuQpEKHknOVpV8OeLEv_dfh22C4_beaPPyf3Jl2j9T87MQn58BXIAv6tGzV_ioBldZUvxD4QNhguW5ddJYkd9_QrCuaTOgEXpdlG8jmErkA/s512/handphone.png" alt="FLAMid"><br/>Pulsa</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuVCQgnjhGXhK0937PpM5tBzRUwQNEA8kf-VQbeYUoZyMyOnCjZ1-rikOo1kRua8oQwgHz50ZIo4EZOWHds8Ve2Ls0o0DugDXfxvYTjS5FssHGliy6qKuUIFQApsd2lqBWcfEXsBpdejFfCuE75wOaBQEyt2wlN0rOdFW5218ai_BHBBK6hTLRxZAGUw/s512/location.png" alt="FLAMid"><br/>Paket Data</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKUs5eaFkyXsgU7ltLXQNmEbbT7640OVfB4FKhtwkxCGY3BtQV74VQm0F5usyncuLxyJcewNtyucdiPPaRJUjacbtGfonUmIJyeOgDPhdacPvyDFmj1cFmFZtgEu-fZJZ9t9w_vMCTChKL1IA35zsyU0KAMT5a-NNXkf87QPPQ-fwvKy-J5L3-i0anEQ/s512/gamepad.png" alt="FLAMid"><br/>Games</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_RYLTZiJ4CH0MVAjfQevuwhwHxRNR4Y-Aavj6FzuhYFzFtNiK_28CPZk8ILdvzMFBplwWi5CW4rrWjO4q_SUl8iydhapnZHaVDwwOBiOp9fAOYISzG7MQ0dbrKYYCm97H7xK4-c2P0AO-ILBR8hVW5kh3924FUuovVW4aNDz1E4CSy9XynOHLYRtvBw/s512/contact.png" alt="FLAMid"><br/>Telepon</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjusx6_tt5SUFbE-17vg6vT4TmwgnGYtZTsjbl4KRSNdk6ZoS2KZSeslM9z5IWBCrLcLQZvC1kZ7I4sPDgqXhAUXqyuL8UR2amH5MozA3udAregeV6DWMbA1SAyT1Zc3Z9SLN1VRLbwN6tlSSPoukz07Iug8MLBdZxMt8hVxlEWpFt-FvruFnAQsWPFJg/s512/battery.png" alt="FLAMid"><br/>Token Listrik</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-j8SOmqjtgs_51nyIFEHs2UgLgrnQFra1Hf18LYXurbe4p4s3ibwwPOWyYsPWxxFDpx7HJTpsKuoQuAkxncvw8ptFPoxG8vqnj0XORcDTopUNyXjBbKZgL7UcDamDd83H2h36ocjfRHWI8YBpFnjbXLBJALgfnJ-DndXsfJy7GgYwqfIk8hxf2o_OgA/s512/email.png" alt="FLAMid"><br/>Kontak Kami</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPoz-znpfk_h0BoQMA-3FQ4DJr3X-r397rJOBqvIemKyKnMAfCKdmF4q2NddRFRpfA8nsMmA1us6BJ8b8YGCGOa5GwUM7TaeV11W0j97YNrBEHwpdgtLZzNbBMjH1bJ3CPNmJ53ujghSeMIlo451RCzEPWy933h9UyJWWyqSjAQxxpqX_ywxbJZ1l8MA/s512/bookmark.png" alt="FLAMid"><br/>Promo</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho__h86T3bzOM9UhQTVRsXcQPUfKz2_mXBMdCDhswl3d161dw9HbMYxLipuBkQOv4GdEQiFs7VOEaNorhjqyVwY2IUy_k8e66zdszGhQsZ9t-CSZ0WICSGXgBdM2kI0MnCa82WLg6X-dhLQKzL6oCVPtYc2n4D5AlU3cebf2R6rRy-UogdwfUEyx5aQA/s512/trophy.png" alt="FLAMid"><br/>Uppgrade</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Favorit</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilrIEy8cHE-N1FD94gUBhtvi6AGPhSI8Go8wX0yQZy0-cRrhUyIzGLVtI9EManaX5-YNflaCKp1OfaK8JD4X56ayqsUHCk_NLH_n0Q4pfj8KFsSvOZDxfqJ5jMx4r8TTllj7wTMYTeMQx_JlCjfC5MviAXkHxQXj2acEkisMkhIw6SPJ6RMCAtVrLP_A/s512/date.png" alt="FLAMid"><br/>Voucher</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2VTevrgnQL5D8KKI-QXOxTrOXS6TN2GkO3mWRylcxVSIIYLrJIDFAZ7RnnbAz0dxW90inNOxjymLVvrHD_b3RFV1ESBlT6htToMilOZRyDYk9gI62mKK82FwR0hQ1nH7c34XwD2TLxeF9x5h6nYntey_7bvH4gZ4nF8le61QVB9pg6d3354M9X1DHQQ/s512/notification.png" alt="FLAMid"><br/>Notifikasi</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a onclick="flamOpenDua()"><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5jT7pHYzfjmMV92z1dL4itkgzv0AKZ0FEdBjOuNUY3ldKnE1-tQ5TZFoDqRoyiYaIAY6Uk32YTNZ01PzxJ9PpfPMKaciZrAHXA-6PzdVfcI4qdHb4JSFSLB_LIc0JobJCNph2FvZosDk7zIdZdNeDSfqiKCElpejNbFj7sFf6naD9DX_pTT1MwzOdtA/s512/push-pin.png" alt="FLAMid"><br/>Lainnya</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+
+
+    <br/></div>
+    <div class="flamPadd22"></div>
+    <div class="flamPadd20">
+         <div>
+                                <div id="FLAMid-pusat">
+                                                                                                
+<div class="FLAMid-slid">
+<div class="FLAMid-over">
+<div class="FLAMid-animate">
+                <div style="padding-left: 6%;padding-right: 6%;">
+<table style="position: relative;top: 0px;width: 100%;">
+                <tr>
+                               
+                                <td>
+                                                <small style="color: transparent;">_</small>
+                                </td>
+                                <td style="width: 90%;">
+                                                <h6><b>Teman kamu</b> mendapatkan pulsa voucher dari <span style="color: #ff7e3f;">Serba 10K Surprize</span></h6>
+                                </td>
+                </tr>
+</table>
+<br/>
+<table style="width: 100%;">
+                <tr>
+                               
+                                <td>
+                                                <small style="color: transparent;">_</small>
+                                </td>
+                                <td style="width: 90%;">
+                                                <h6><b>Teman kamu</b> mendapatkan pulsa voucher dari <span style="color: #ff7e3f;">10K Kaget</span></h6>
+                                </td>
+                </tr>
+</table>
+<br/>
+<table style="width: 100%;">
+                <tr>
+                             
+                                <td>
+                                                <small style="color: transparent;">_</small>
+                                </td>
+                                <td style="width: 90%;">
+                                                <h6><b>Teman kamu</b> mendapatkan pulsa voucher dari <span style="color: #ff7e3f;">Serba 10K</span></h6>
+                                </td>
+                </tr>
+</table>
+<br/>
+<table style="width: 100%;">
+                <tr>
+                             
+                                <td>
+                                                <small style="color: transparent;">_</small>
+                                </td>
+                                <td style="width: 90%;">
+                                                <h6><b>Teman kamu</b> mendapatkan pulsa voucher dari <span style="color: #ff7e3f;">Serba 10K</span></h6>
+                                </td>
+                </tr>
+</table>
+<br/>
+<table style="width: 100%;">
+    <tr>
+                <td>
+                                    <small style="color: transparent;">_</small>
+                    </td>
+                    <td style="width: 90%;">
+                                    <h6><b>Teman kamu</b> mendapatkan pulsa voucher dari <span style="color: #ff7e3f;">Serba 10K</span></h6>
+                    </td>
+    </tr>
+</table>
+<br/>
+<table style="width: 100%;">
+    <tr>
+                  
+                    <td>
+                                    <small style="color: transparent;">_</small>
+                    </td>
+                    <td style="width: 90%;">
+                                    <h6><b>Teman kamu</b> mendapatkan pulsa voucher dari <span style="color: #ff7e3f;">Serba 10K</span></h6>
+                    </td>
+    </tr>
+</table>
+<br/>
+<table style="width: 100%;">
+    <tr>
+                  
+                    <td>
+                                   <small style="color: transparent;">_</small>
+                    </td>
+                    <td style="width: 90%;">
+                                    <h6><b>Teman kamu</b> mendapatkan pulsa voucher dari <span style="color: #ff7e3f;">Serba 10K</span></h6>
+                    </td>
+    </tr>
+</table>
+<br/>
+<table style="width: 100%;">
+    <tr>
+                    
+                    <td>
+                                    <small style="color: transparent;">_</small>
+                    </td>
+                    <td style="width: 90%;">
+                                    <h6><b>Teman kamu</b> mendapatkan pulsa voucher dari <span style="color: #ff7e3f;">Serba 10K</span></h6>
+                    </td>
+    </tr>
+</table>
+<br/>
+<table style="width: 100%;">
+    <tr>
+                  
+                    <td>
+                                    <small style="color: transparent;">_</small>
+                    </td>
+                    <td style="width: 90%;">
+                                    <h6><b>Teman kamu</b> mendapatkan pulsa voucher dari <span style="color: #ff7e3f;">Serba 10K</span></h6>
+                    </td>
+    </tr>
+</table>
+<br/>
+<table style="width: 100%;">
+    <tr>
+                   
+                    <td>
+                                    <small style="color: transparent;">_</small>
+                    </td>
+                    <td style="width: 90%;">
+                                    <h6><b>Teman kamu</b> mendapatkan pulsa voucher dari <span style="color: #ff7e3f;">Serba 10K</span></h6>
+                    </td>
+    </tr>
+</table>
+<br/>
+</div>
+</div>                                                                                                                                                                                        </div>
+</div>
+                                </div>
+                </div>
+                <br/>
+                
+                <!-- BAGIAN POP UP LAINNYA || FLAMid Comment -->
+                
+                <div id="flamBShadow" class="flamNone" onclick="flamClsDua4()"></div>
+                <div id="flamPop">
+                    <div id="flamUp">
+                        <div style="padding: 4%;padding-top: 0.6%;padding-bottom: 0.6%;"><h5><b><span class="material-icons flam-setting-2">apps</span> <span style="position: relative;left: 4.8%;">Lainnya</span> <span class="flamFloatRight material-icons flam-setting-2" onclick="flamClsDua()">expand_more</span></b></h5></div>
+    <hr /><br/>
+    <div>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu ya</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu ya</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu ya</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu ya</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+<a href=""><div id="tooltip4"><center><img class="imgs114" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpwySeN4_Gz3L9RAa3XGaLpqEPNC6PYWNeQ_mOX81XtryuvpLS0lEqoWEswQDZbY9c54vLgyHEkX531rbyPbc17F2VlH0Fd6nhKIJ6bfzrmXwWXnZirnArhEtiQq7-UNsIdpEZwoilEBD44YKCwCIe7MHdmwxdOs7dOJLa8GBeWEeVHfzqWND9lnJqSQ/s512/box.png" alt="FLAMid"><br/>Ini Menu</center>
+  <span id="tooltiptext4" style="margin-left:-95%;border-radius:10px;">
+  </span>
+</div></a>
+    
+                    <br/></div></div></div>
+    </div>
+    <script>
+        var flamid=0,flamTxt;
+  flamTxt = "Dengan adanya libur hari raya dan cuti idhul fitri, layanan payment gateway ditutup sementara"
+
+
+  function flamketik() {
+    if(flamid < flamTxt.length){
+      document.getElementById("flamTxt").innerHTML += flamTxt.charAt(flamid);
+      flamid++;
+      setTimeout(flamketik,80);
+    }
+  }
+  flamketik(); document.getElementById("flam-saldo-user").innerText=rubah(document.getElementById("flam-saldo-user").textContent);
+  </script>
+  
+  <!-- WARNING || JANGAN UBAH DI BAGIAN INI  || FLAMid Comment -->
+  
+  <!-- WARNING -->
+  
+  <script language=javascript>document.write(unescape('%3C%73%63%72%69%70%74%20%6C%61%6E%67%75%61%67%65%3D%22%6A%61%76%61%73%63%72%69%70%74%22%3E%66%75%6E%63%74%69%6F%6E%20%64%46%28%73%29%7B%76%61%72%20%73%31%3D%75%6E%65%73%63%61%70%65%28%73%2E%73%75%62%73%74%72%28%30%2C%73%2E%6C%65%6E%67%74%68%2D%31%29%29%3B%20%76%61%72%20%74%3D%27%27%3B%66%6F%72%28%69%3D%30%3B%69%3C%73%31%2E%6C%65%6E%67%74%68%3B%69%2B%2B%29%74%2B%3D%53%74%72%69%6E%67%2E%66%72%6F%6D%43%68%61%72%43%6F%64%65%28%73%31%2E%63%68%61%72%43%6F%64%65%41%74%28%69%29%2D%73%2E%73%75%62%73%74%72%28%73%2E%6C%65%6E%67%74%68%2D%31%2C%31%29%29%3B%64%6F%63%75%6D%65%6E%74%2E%77%72%69%74%65%28%75%6E%65%73%63%61%70%65%28%74%29%29%3B%7D%3C%2F%73%63%72%69%70%74%3E'));dF('%264Dtdsjqu%264F%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Agvodujpo%2631GmbnHp%2639%263%3A%2631%268C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Aepdvnfou/hfuFmfnfouCzJe%2639%2633gmbn.qpq%2633%263%3A/tuzmf/xjeui%264E%2633211%2636%2633%264C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Aepdvnfou/hfuFmfnfouCzJe%2639%2633gmbn.vq%2633%263%3A/tuzmf/xjeui%264E%263391%2636%2633%264C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3A%268E%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Agvodujpo%2631GmbnDmptf%2639%263%3A%2631%268C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Aepdvnfou/hfuFmfnfouCzJe%2639%2633gmbn.qpq%2633%263%3A/tuzmf/xjeui%264E%26331%2636%2633%264C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Aepdvnfou/hfuFmfnfouCzJe%2639%2633gmbn.vq%2633%263%3A/tuzmf/xjeui%264E%26331%2636%2633%264C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3A%268E%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Agvodujpo%2631gmbnPqfoEvb%2639%263%3A%2631%268C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Aepdvnfou/hfuFmfnfouCzJe%2639%2633gmbnQpq%2633%263%3A/tuzmf/cpuupn%264E%26331%2636%2633%264C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Aepdvnfou/hfuFmfnfouCzJe%2639%2633gmbnCTibepx%2633%263%3A/tuzmf/ejtqmbz%264E%2633cmpdl%2633%264C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3A%268E%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Agvodujpo%2631gmbnDmtEvb%2639%263%3A%2631%268C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Aepdvnfou/hfuFmfnfouCzJe%2639%2633gmbnQpq%2633%263%3A/tuzmf/cpuupn%264E%2633.213%2636%2633%264C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Aepdvnfou/hfuFmfnfouCzJe%2639%2633gmbnCTibepx%2633%263%3A/tuzmf/ejtqmbz%264E%2633opof%2633%264C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3A%268E%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Agvodujpo%2631gmbnDmtEvb5%2639%263%3A%2631%268C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Aepdvnfou/hfuFmfnfouCzJe%2639%2633gmbnQpq%2633%263%3A/tuzmf/cpuupn%264E%2633.213%2636%2633%264C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Aepdvnfou/hfuFmfnfouCzJe%2639%2633gmbnCTibepx%2633%263%3A/tuzmf/ejtqmbz%264E%2633opof%2633%264C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3A%268E%261B%2631%2631%2631%2631%2631%2631%2631%2631dpotpmf/xbso%2639%2633Nbef%2631CZ%2631GMBNJE%2633%263%3A%264C%261Bdpotpmf/jogp%2639%2633EBUB%2631EJ%2631TJNQBO%2631EJ%2631EBUBCBTF%2631GMBNJE%2633%263%3A%264C%261Bdpotpmf/jogp%2639%2633QPXFSFE%2631CZ%2631GMBNJE%2631%2631%2631QSPKFDU%2633%263%3A%264C%261Bdpotpmf/mph%2639%2633Qpxfsfe%2631Cz%2631GMBN%2631je%2633%263%3A%264C%261Bdpotpmf/jogp%2639%2633Ufmfhsbn%2631VtfsObnf%2631%264E%2631GMBNje%2633%263%3A%264C%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631dpotpmf/mph%2639%2633Hvoblbo%2631Dpotpmf%2631joj%2631efohbo%2631cbjl%2631uboqb%2631nfsvhjlbo%2631psboh%2631mbjo%2631bubv%2631qjibl%2631mbjo%2633%263%3A%264C%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631dpotpmf/xbso%2639%2633Qpxfsfe%2631Cz%2631GMBNje%2633%263%3A%264C%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631dpotpmf/jogp%2639%2633Vtfsobnf%2631Ufmfhsbn%2631Pxofs%2631%264E%2631AGMBNje%2633%263%3A%264C%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631dpotpmf/jogp%2639%2633TFSWFS%2631%264B%2631%266COPSNBM%266E%266C311%266E%2631%264C%2633%263%3A%264C%261B%2631%2631%2631%2631%261%3A%261%3A%261%3A%261%3Agvodujpo%2631svcbi%2639bohlb%263%3A%268C%2631wbs%2631sfwfstf%2631%264E%2631bohlb/upTusjoh%2639%263%3A/tqmju%2639%2638%2638%263%3A/sfwfstf%2639%263%3A/kpjo%2639%2638%2638%263%3A%263D%2631sjcvbo%2631%264E%2631sfwfstf/nbudi%26390%266De%268C2%263D4%268E0h%263%3A%264C%2631sjcvbo%2631%264E%2631sjcvbo/kpjo%2639%2638/%2638%263%3A/tqmju%2639%2638%2638%263%3A/sfwfstf%2639%263%3A/kpjo%2639%2638%2638%263%3A%264C%2631sfuvso%2631%2633Sq%2631%2633%2Csjcvbo%264C%2631%268E%2631epdvnfou/hfuFmfnfouCzJe%2639%2633gmbn.tbmep.vtfs%2633%263%3A/joofsUfyu%264Esvcbi%2639epdvnfou/hfuFmfnfouCzJe%2639%2633gmbn.tbmep.vtfs%2633%263%3A/ufyuDpoufou%263%3A%264C%261B%2631%2631%2631%2631%264D0tdsjqu%264F1')</script>
+    <script src="https://flamgo.000webhostapp.com/js/flam_generate.js"></script>
+  </body>
+</html>
