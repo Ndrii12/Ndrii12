@@ -12,5 +12,12 @@
         "deskripsi": "Testing",
         "post_date": "2024-09-18T20:23",
         "link_tujuan": "www.google.com"
+    },
+    {
+        "title": "hello3",
+        "deskripsi_singkat": "test2",
+        "deskripsi": "Testing",
+        "post_date": "2024-09-18T20:23",
+        "link_tujuan": "www.google.com"
     }
 ]
