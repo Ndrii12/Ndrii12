@@ -1,5 +1,26 @@
 [
     {
+        "title": "\ud83d\udfe2 TRANSAKSI TERPANTAU LANCAR",
+        "deskripsi_singkat": "Silahkan Di Maksimal Kembali Transaksinya\ud83d\ude80",
+        "deskripsi": "Silahkan Di Maksimal Kembali Transaksinya\ud83d\ude80",
+        "post_date": "2024-08-26T09:22",
+        "link_tujuan": ""
+    },
+    {
+        "title": "\ud83d\udce2 INFORMASI PENTING",
+        "deskripsi_singkat": "Saat Melakukan Deposit Saldo, Jangan Lupa Untuk Memasukan Kode Unik",
+        "deskripsi": "Saat Melakukan Deposit Saldo, Jangan Lupa Untuk Memasukan Kode Unik (3 Digit Terakhir) Dari Nominal Yang Harus Di Bayar Pada Aplikasi, Agar Bisa Di Proses Otomatis Oleh Sistem",
+        "post_date": "2024-08-26T09:24",
+        "link_tujuan": ""
+    },
+    {
+        "title": "Test",
+        "deskripsi_singkat": "testimg",
+        "deskripsi": "Testttttt",
+        "post_date": "2024-09-18T19:24",
+        "link_tujuan": ""
+    },
+    {
         "title": "hello",
         "deskripsi_singkat": "test",
         "deskripsi": "Testing",
